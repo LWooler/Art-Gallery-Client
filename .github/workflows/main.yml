@@ -20,4 +20,4 @@ jobs:
       - name: Install Node Modules
         run: npm install
       - name: Karma Tests
-        run: npm run test:ci
+        run: npm run test --no-watch
