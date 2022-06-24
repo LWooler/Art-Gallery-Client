@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
       - name: Install Node Modules
         run: npm install
       - name: Karma Tests
-        run: npm test --no-watch --browsers=ChromeHeadlessCI
+        run: npm run test:ci
