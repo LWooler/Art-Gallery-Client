@@ -20,4 +20,4 @@ jobs:
       - name: Install Node Modules
         run: npm install
       - name: Karma Tests
-        run: ng test --no-watch --browsers=ChromeHeadlessCI
+        run: npm test --no-watch --browsers=ChromeHeadlessCI
